@@ -1,0 +1,8 @@
+#!/bin/bash
+
+per1=kishore
+per2=mahi
+
+echo "$per1 How are you?"
+echo "$per2 I am fine"
+echo "$per2 What are you doing $per1?"
