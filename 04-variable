@@ -1,7 +1,7 @@
 #!/bin/bash
 
-per1=kishore
-per2=mahi
+per1=Syamala
+per2=Meghana
 
 echo "$per1 How are you?"
 echo "$per2 I am fine"
