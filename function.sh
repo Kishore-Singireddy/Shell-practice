@@ -35,7 +35,7 @@ then
     VALIDATE $? "MYSQL"
 else
     echo "MYSQL is already installed, no action required"
-    exit 0
+    
 fi
 
 dnf list installed nginx
