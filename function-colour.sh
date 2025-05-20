@@ -45,7 +45,7 @@ then
     VALIDATE $? "MYSQL"
 
 else 
-    echo -e "${GREEN} MYSQL is already installed, no action required."
+    echo -e "${GREEN} MYSQL is already installed, no action required. ${RESET}"
 
 fi
 
@@ -58,7 +58,7 @@ then
     VALIDATE $? "PYTHON"
 
 else 
-    echo -e "${GREEN} PYTHON is already installed, no action required."
+    echo -e "${GREEN} PYTHON is already installed, no action required.${RESET}"
 
 fi
 
@@ -71,6 +71,6 @@ then
     VALIDATE $? "nginx"
 
 else 
-    echo -e "${GREEN} nginx is already installed, no action required."
+    echo -e "${GREEN} nginx is already installed, no action required. ${RESET}"
 
 fi
