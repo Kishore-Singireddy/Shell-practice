@@ -31,7 +31,7 @@ then
 else 
     echo -e "${GREEN} You have root access, proceedig to the next steps.... "
 
-if
+fi
 
 #Checking and installing the software
 
