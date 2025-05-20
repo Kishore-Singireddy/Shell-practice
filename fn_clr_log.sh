@@ -13,7 +13,7 @@ LOGS_FOLDER="/var/log/shellscript-logs"
 LOG_SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOG_FILE="$LOG_FOLDER/$LOG_SCRIPT_NAME.log"
 
-mkdir -p $LOG_FOLDER &>> $LOG_FILE
+mkdir -p $LOG_FOLDER &>>$LOG_FILE
 
 echo "Script stated executing at $(date)" &>>$LOG_FILE
 
@@ -22,10 +22,10 @@ echo "Script stated executing at $(date)" &>>$LOG_FILE
 VALIDATE() { 
     if [ $1 -ne 0 ]
     then 
-        echo -e "${RED} $2 installation failed aborting the installation"
+        echo -e "${RED} $2 installation failed aborting the installation" &>>$LOG_FILE
         exit 1
     else 
-        echo -e "${GREEN} $2 Installation is successful"
+        echo -e "${GREEN} $2 Installation is successful" &>>$LOG_FILE
     fi
 }
 
@@ -36,22 +36,22 @@ echo "lets start the process"
 
 if [ $USERID -ne 0 ]
 then 
-    echo -e "${RED} You are not logged in as root user, you can not install, exiting.....${RESET}" &>> $LOG_FILE
+    echo -e "${RED} You are not logged in as root user, you can not install, exiting.....${RESET}" &>>$LOG_FILE
     exit 1
 else 
-    echo -e "${GREEN} You have root access, proceedig to the next steps.... " &>> $LOG_FILE
+    echo -e "${GREEN} You have root access, proceedig to the next steps.... " &>>$LOG_FILE
 
 fi
 
 #Checking and installing the software
 
 
-dnf list installed mysql -y &>> $LOG_FILE
+dnf list installed mysql -y &>>$LOG_FILE
 
 if [ $? -ne 0 ]
 then
     echo  -e " ${GREEN} Installing MYSQL..."
-    dnf install mysql  &>> $LOG_FILE
+    dnf install mysql  &>>$LOG_FILE
     VALIDATE $? "MYSQL"
 
 else 
