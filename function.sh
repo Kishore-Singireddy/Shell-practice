@@ -47,7 +47,7 @@ then
     VALIDATE $? "nginx"
 else
     echo "nginx is already installed, no action required"
-    exit 0
+    
 fi
 
 #Installing Python3
@@ -61,5 +61,5 @@ then
     VALIDATE $? "python3"
 else
     echo "python3 is already installed, no action required"
-    exit 0
+    
 fi
