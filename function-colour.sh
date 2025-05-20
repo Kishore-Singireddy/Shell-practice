@@ -11,4 +11,4 @@ BLUE='\e[34m'
 
 #VALIDATE(){}
 
-echo "${YELLOW} Hi You are about to install ${BLUE} MYSQL, NGINX, PYTHON3 ${RESET}"
+echo -e "${YELLOW} Hi You are about to install ${BLUE} MYSQL, NGINX, PYTHON3 ${RESET}"
