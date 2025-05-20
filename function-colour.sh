@@ -36,7 +36,7 @@ fi
 #Checking and installing the software
 
 
-dnf list installed mysql
+dnf list installed mysql -y
 
 if [ $? -ne 0 ]
 then
@@ -49,7 +49,7 @@ else
 
 fi
 
-dnf list installed python3
+dnf list installed python3 -y
 
 if [ $? -ne 0 ]
 then
@@ -62,7 +62,7 @@ else
 
 fi
 
-dnf list installed nginx
+dnf list installed nginx -y
 
 if [ $? -ne 0 ]
 then
