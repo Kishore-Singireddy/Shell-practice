@@ -11,9 +11,9 @@ BLUE='\e[34m'
 #for Log capture
 LOGS_FOLDER="/var/log/shellscript-logs"
 LOG_SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-LOG_FILE="$LOG_FOLDER/$LOG_SCRIPT_NAME.log"
+LOG_FILE="$LOGS_FOLDER/$LOG_SCRIPT_NAME.log"
 
-mkdir -p $LOG_FOLDER &>>$LOG_FILE
+mkdir -p $LOGS_FOLDER &>>$LOG_FILE
 
 echo "Script stated executing at $(date)" &>>$LOG_FILE
 
