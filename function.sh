@@ -15,7 +15,7 @@ then
 else 
     echo "Proceeding to check and install the software"
 
-if
+fi
 
 dnf list installed mysql
 
