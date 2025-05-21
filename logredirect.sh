@@ -26,7 +26,8 @@ LOG_FILE="$LOG_FOLDER/$LOG_SCRIPT_NAME.log"
 mkdir -p $LOG_FOLDER
 
 #FUNCTION
-VALIDATE() {
+VALIDATE() 
+{
     if [ $1 -ne 0 ]
     then 
         echo -e " ${R} $2 installing failed.. checking the logs.. exiting ${C}"
