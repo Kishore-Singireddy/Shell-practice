@@ -47,7 +47,7 @@ else
 fi
 
 #Check and install mysql
-dnf list instslled mysql &>>$LOG_FILE
+dnf list instslled mysql 
 
 if [ $? -ne 0 ]
 then
