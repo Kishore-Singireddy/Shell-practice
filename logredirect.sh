@@ -6,4 +6,4 @@ echo "Welcome for software installation"
 #Colour Variables"
 R='\e[31'
 
-echo "${R} Hello This is red "
+echo -e "${R} Hello This is red "
