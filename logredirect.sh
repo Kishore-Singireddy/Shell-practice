@@ -33,6 +33,7 @@ VALIDATE()
         echo -e " ${R} $2 installing failed.. checking the logs.. exiting ${C}"
     else
         echo -e "${G} $2 is successfully installed ${C}"
+    fi
 }
 
 #Checking if the user is root or not
